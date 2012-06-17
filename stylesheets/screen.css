@@ -124,4 +124,15 @@ body{
 		#090809 55.1%,
 		#050405);
 }
+#tab-bar a:after {
+	content: url(../images/sprite.png);
+	position: absolute;
+	overflow: hidden;
+	left: 50%;
+	top: 1.833em;
+}
+.svg #tab-bar a:after {
+	content: url(../images/sprite.svg);
+}
+
 
