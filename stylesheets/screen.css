@@ -107,3 +107,21 @@ body{
 	clip: rect(0 18px 33px 0px);
 	position: absolute;
 }
+#tab-bar {
+	background: #050405;
+}
+.cssgradients #tab-bar {
+	background-image:
+		-webkit-gradient(linear, 0% 0%, 0% 100%,
+		from(#353535),
+		color-stop(0.55, #212021),
+		color-stop(0.551, #090809),
+		to(#050405));
+	background-image:
+		linear-gradient(top,
+		#353535,
+		#212021 55%,
+		#090809 55.1%,
+		#050405);
+}
+
