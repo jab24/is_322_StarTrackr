@@ -68,7 +68,8 @@ body{
 }
 .table-view .even {
 	background: #830f1b;
-}.table-action li {
+}
+.table-action li {
 	position: relative;
 }
 .table-action a {
