@@ -16,3 +16,43 @@ mark, audio, video {
 body{
 	font-family: "HelveticaNeue", Arial, Helvetica, sans-serif;
 }
+#tab-bar{
+	zoom: 1;
+  background: #050405;
+  border-bottom: 1px #441d22 solid;
+  position: relative;
+}
+#tab-bar:before, #tab-bar:after{
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden; 
+}
+#tab-bar:after{
+	clear: both;
+}
+#tab-bar li {
+  display: inline;
+  float: left;
+  width: 33.333%; }
+#tab-bar a {
+  text-shadow: rgba(0, 0, 0, 0.4) 0 -1px 1px;
+  color: #cdcdcd;
+  display: block;
+  font-size: 0.857em;
+  font-weight: bold;
+  height: 4.583em;
+  min-height: 55px;
+  margin: 0 0.833em;
+  overflow: hidden;
+  padding-top: 0.428em;
+  position: relative;
+  text-align: center;
+  text-decoration: none; 
+}
+#tab-sighting a{
+	background: #d5d2d2;
+	color: #111111;
+	height: 4.95em;
+	margin: 0 0 -0.367em;
+}
