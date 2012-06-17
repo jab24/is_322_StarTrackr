@@ -102,4 +102,6 @@ body{
 	top: 50%;
 	margin-top: -1.1em;
 }
-
+#tab-spots a:after{
+	content: url(../images/sprite.png);
+}
