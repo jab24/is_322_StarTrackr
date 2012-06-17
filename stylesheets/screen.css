@@ -59,3 +59,14 @@ body{
 .page-spots #tab-spots a{
 	color: #ebc466;
 }
+.table-view {
+	background: #7c0c18;
+}
+.table-view li {
+	border-top: 1px #8c2a34 solid;
+	border-bottom: 1px #640913 solid;
+}
+.table-view .even {
+	background: #830f1b;
+}
+
