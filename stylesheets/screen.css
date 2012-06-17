@@ -104,4 +104,6 @@ body{
 }
 #tab-spots a:after{
 	content: url(../images/sprite.png);
+	clip: rect(0 18px 33px 0px);
+	position: absolute;
 }
