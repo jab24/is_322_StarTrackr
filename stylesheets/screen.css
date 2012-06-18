@@ -22,6 +22,14 @@ body{
   border-bottom: 1px #441d22 solid;
   position: relative;
 }
+.standalone #tab-bar {
+	margin-top: .3em;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	z-index: 200;
+}
+
 #tab-bar:before, #tab-bar:after{
   content: "\0020";
   display: block;
@@ -105,7 +113,14 @@ body{
 #tab-spots a:after{
 	content: url(../images/sprite.png);
 	clip: rect(0 18px 33px 0px);
+	left: 50%;
+	margin-left: -10px;
+	top: 1.833em;
 	position: absolute;
+}
+.page-spots #tab-spots a:after {
+	clip: rect(0 37px 33px 18px);
+	margin-left: −29px;
 }
 #tab-bar {
 	background: #050405;
@@ -124,6 +139,49 @@ body{
 		#090809 55.1%,
 		#050405);
 }
+.cssgradients .page-spots #tab-spots a {
+background:
+-webkit-gradient(linear, left top, left bottom,
+from(rgba(40, 40, 40, .9)),
+color-stop(0.55, rgba(35, 35, 35, .5)),
+to(rgba(46, 46, 46, .1)));
+background-image:
+linear-gradient(
+rgba(40, 40, 40, .9),
+rgba(35, 35, 35, .5) 55%,
+rgba(46, 46, 46, .1));
+}
+.page-spots #tab-spots a:before {
+content: "";
+display: block;
+height: 0.5em;
+margin-left: -0.5em;
+left: 50%;
+position: absolute;
+margin-top: -1px;
+top: 0;
+width: 1em;
+}
+.cssgradients .page-spots #tab-spots a:before {
+background-image:
+-webkit-gradient(radial, 50% 0, 0, 50% 0, 7,
+from(rgba(236, 223, 156, 0.9)),
+to(rgba(0, 0, 0, 0)));
+background-image:
+radial-gradient(
+rgba(236, 223, 156, 0.9),
+rgba(0, 0, 0, 0));
+}
+.cssgradients #page-spots #tab-spots a:before {
+/* Snip previous styles */
+-webkit-border-bottom-left-radius: 0.143em;
+-webkit-border-bottom-right-radius: 0.143em;
+-moz-border-radius-bottomleft: 0.143em;
+-moz-border-radius-bottomright: 0.143em;
+border-bottom-left-radius: 0.143em;
+border-bottom-right-radius: 0.143em;
+}
+
 #tab-bar a:after {
 	content: url(../images/sprite.png);
 	position: absolute;
@@ -134,4 +192,23 @@ body{
 .svg #tab-bar a:after {
 	content: url(../images/sprite.svg);
 }
+.standalone.cssgradients .page-spots #tab-spots a {
+/* New gradient */
+background-image:
+-webkit-gradient(linear, 0% 0%, 0% 100%,
+from(rgba(46, 46, 46, 0),
+color-stop(0.55, rgba(35, 35, 35, 0.5)),
+to(rgba(40, 40, 40, 0.9))));
+background-image:
+linear-gradient(top,
+rgba(46, 46, 46, 0),
+rgba(35, 35, 35, 0.5) 55%,
+rgba(40, 40, 40, 0.9));
+/* New box shadow */
+-o-box-shadow: rgba(0, 0, 0, 0.8) 0 1px 1px 0;
+-webkit-box-shadow: rgba(0, 0, 0, 0.8) 0 1px 1px 0;
+-moz-box-shadow: rgba(0, 0, 0, 0.8) 0 1px 1px 0;
+box-shadow: rgba(0, 0, 0, 0.8) 0 1px 1px 0;
+}
+
 
