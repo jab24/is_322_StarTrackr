@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html manifest="cache.manifest">
+	<head>
+		<title>StarTrackr: Spot</title>
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+
+		<link type="text/css" rel="stylesheet" href="../stylesheets/screen.css" media="screen"/>
+
+	</head> 
+	<body>
+		<ul id="tab-bar">
+			<li id="tab-spots">
+				<a data-load="spots" href="../spots.html">
+				Spots
+				</a>
+			</li>		 
+			<li id="tab-sighting">
+				<a data-load="sightings" href="../new.html">
+				Add a sighting
+				</a>
+			</li>
+			<li id="tab-stars">
+				<a data-load="stars" href="../stars.html">
+				Stars
+				</a>
+			</li>
+		</ul><!-- #tab-bar -->
+
+  <script type="text/javascript" src="../javascripts/vendor/modernizr-1.7.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+  <script src="../javascripts/vendor/jquery.tmpl.min.js"></script>
+  
+  <script type="text/javascript" charset="utf-8" src="../javascripts/ch5/07-cache-manifest.js"></script>
+	</body>
+</html>
